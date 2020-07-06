@@ -1,0 +1,29 @@
+package chapter02;
+
+public class book3 {
+
+	public static void main(String[] args) {
+		int total1 = 0;
+		int total2 = 0;
+		int total3 = 0;
+		int[][] array = {
+				{95,86},
+				{83,92,96},
+				{78,83,93,87,88}
+				};
+		for(int i=0;i<array[0].length;i++) {
+			total1 = total1 + array[0][i];
+		}
+		System.out.println(total1);
+		for(int j=0;j<array[1].length;j++) {
+			total2 = total2 + array[1][j];
+		}
+		System.out.println(total2);
+		for(int k=0;k<array[2].length;k++) {
+			total3 = total3 + array[2][k];
+		}
+		System.out.println(total3);
+		
+
+}
+}

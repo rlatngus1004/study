@@ -1,0 +1,82 @@
+package chapter03;
+
+import java.util.Scanner;
+
+public class ex02 {
+
+	public static void main(String[] args) {
+		boolean run =true;
+		Scanner s = new Scanner(System.in);
+		int[] scores = null;
+		double avg = 0.0;
+		int max = 0;
+		int sum = 0;
+		
+		while(run) {
+			System.out.println("──────────────────────────────────────────────────");
+			System.out.println("1.학생수 | 2.점수입력 | 3. 점수리스트  | 4. 분석 | 5. 종료");
+			System.out.println("──────────────────────────────────────────────────");
+			System.out.print("선택>");
+
+			int selectNo = s.nextInt();
+			
+			if(selectNo == 1) {
+				scores = studentnum(s);
+			}else if(selectNo == 2) { 
+				sum = point(scores, s);
+				max = point2(scores, s);
+			}else if(selectNo == 3) {
+				int num = 0;
+				for(int score:scores){
+					System.out.println("scores["+(num++)+"]: "+score);
+				}
+			}else if(selectNo == 4) {
+				avg = sum/(double)scores.length;
+				System.out.println("최고 점수: "+max);
+				System.out.println("평균 점수: "+avg);
+			}else if(selectNo == 5) {
+				run = false;
+			}
+		}
+		System.out.println("프로그램 종료");}
+	
+	private static int point2(int[] scores,Scanner s) {
+		int sum = 0;
+		int max = 0;
+		for(int i=0;i<scores.length;i++) {
+			System.out.print("scores["+i+"]>");
+			scores[i] = s.nextInt();
+			sum +=scores[i];
+			if(max < scores[i]) {
+				max = scores[i];
+			}
+	}
+		return max;
+	}
+
+	private static int point(int[] scores,Scanner s) {
+		int sum = 0;
+		int max = 0;
+		for(int i=0;i<scores.length;i++) {
+			System.out.print("scores["+i+"]>");
+			scores[i] = s.nextInt();
+			sum +=scores[i];
+			if(max < scores[i]) {
+				max = scores[i];
+			}
+	}
+		return sum;
+}
+	private static int[] studentnum(Scanner s) {
+		System.out.print("학생수>");
+		int studentNo = s.nextInt();
+		int[] scores = new int[studentNo];
+		return scores;
+	}
+}
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+package chapter02;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class ex02 {
+
+	public static void main(String[] args) {
+		int j=0;
+		int i=0;
+		Scanner scan = new Scanner(System.in);
+		Random dice = new Random();
+		int [] x = new int [3];
+		while(true) {
+			while (i<x.length) {
+				x[i] = dice.nextInt(10);
+				i++;
+			}
+			System.out.println("지금부터 야구 게임을 시작합니다. 세가지 원하는 숫자 중 첫번째 숫자를 입력하세요.");
+			int [] y = new int [3];
+			while (j<y.length) { 
+				y[j]= scan.nextInt();
+				j++;
+			}
+			if (i == j && x[i] == x[j]) { 
+				System.out.printf("%d 스트라이크",i == j && x[i] == x[j]);
+			} else {
+				if (x[i] != x[j]) {
+					System.out.printf("%d 볼",+y[i] == x[j]);
+				} else {
+					
+				} if (x[i] != x[j]) {
+					System.out.println("3 스트라이크로 승리했습니다");
+					System.exit(0); 
+				}
+			}
+
+
+		}
+	}
+
+}

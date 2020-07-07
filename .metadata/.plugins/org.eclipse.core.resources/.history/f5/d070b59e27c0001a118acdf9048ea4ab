@@ -1,0 +1,39 @@
+package chapter04;
+
+public class Car01 {
+	String model = "아반떼";
+	String color = "red";
+	int length = 100;
+	int speed = 0;
+	
+	{
+		System.out.println("인스턴스가 만들어 지기전 생성됨");
+	}
+	
+	public Car01(String model) {
+		this.model = model;
+	}
+	
+	public Car01(String model, String color) {
+		this(model);
+		this.color = color;
+	}
+	
+	public Car01(String model, String color, int length) {
+		this(model,color);
+		this.length = length;
+			
+	}
+	
+	public void prt() {
+		System.out.println("*******************************")
+		System.out.println("차량모델: "+this.model);
+		System.out.println("차량색상: "+this.color);
+		System.out.println("차량길이: "+this.length);
+		System.out.println("*******************************")
+	}
+	
+	
+	
+	
+}

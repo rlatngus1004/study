@@ -27,7 +27,7 @@ public class ex01 {
 		int totald=0; int totale=0; int totalf=0;	
 		int total4;
 		while(d<=100){
-			d++0;
+			d++;
 			if((d%2)!=0) {
 				continue;
 			}

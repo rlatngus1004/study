@@ -1,0 +1,24 @@
+package chapter04;
+
+public class member {
+	String name = "이름";
+	String id = "아이디";
+	String password = "비밀번호";
+	int age = 0;
+}
+		public member(String name) {
+			this.id= id
+		}
+		public member(String id) {
+		}
+		public member(String password) {
+		}
+		public member(int age) {			
+		}
+		public void prt() {
+			System.out.println("*******************************");
+			System.out.println("차량모델: "+this.name);
+			System.out.println("차량색상: "+this.color);
+			System.out.println("차량길이: "+this.length);
+			System.out.println("*******************************");
+}

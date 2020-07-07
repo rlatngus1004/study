@@ -1,0 +1,24 @@
+package chapter04;
+
+public class Car01 {
+	String model = "아반떼";
+	String color = "red";
+	int length = 100;
+	int speed = 0;
+	
+	public Car01(String model) {
+		this.model = model;
+	}
+	
+	public Car01(String model, String color) {
+		this.model = model;
+		this.color = color;
+	}
+	
+	public Car01(String model, String color, int length) {
+		this.model = model;
+		this.color = color;
+		this.length = length;
+			
+	}
+}

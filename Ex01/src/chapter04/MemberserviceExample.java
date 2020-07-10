@@ -1,14 +1,24 @@
 package chapter04;
 
+import java.util.Scanner;
+
 public class MemberserviceExample {
+	private static String hong;
+
 	public static void main(String[] args) {
 		Memberservice memberservice = new Memberservice();
-		boolean result = memberservice.login("hong","12345");
+		boolean result = true; 
+		//memberservice.login("hong","12345");
+		Scanner scan = new Scanner(System.in);
+		System.out.println("아이디와 비밀번호를 입력하시요.");
+		String x = scan.nextLine();
+		String y = scan.nextLine();
 		
-		if(result) {
+		if(memberservice.login(x,y)) {
 			System.out.println("로그인이 되었습니다");
-			memberservice.logout("hong");			
-		} else { System.out.println("id 또는 password가 올바르지 않습니다");
-	}
+		} else { 
+			result = false;
+			System.out.println("아이디와 비밀번호가 틀렸습니다.");
+		};
 	}
 }

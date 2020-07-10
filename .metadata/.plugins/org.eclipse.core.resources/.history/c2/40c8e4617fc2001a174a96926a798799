@@ -1,0 +1,15 @@
+package chapter05;
+
+public class Login {
+	System.out.println("로그인");
+	System.out.println("아이디 입력");
+	String id = scan.nextInt();
+	System.out.println("비밀번호 입력");
+	String pwd = scan.nextInt();
+	if(id.equals(m.getid()) && pwd.equals(m.getpw())) {
+		System.out.println("로그인 성공");
+		m.prt();
+	}else {
+		System.out.println("로그인 실패");
+	}
+}

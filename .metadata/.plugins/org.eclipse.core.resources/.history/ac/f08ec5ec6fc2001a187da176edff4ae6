@@ -1,0 +1,11 @@
+package chapter05;
+
+public class main02 {
+
+	public static void main(String[] args) {
+		Dto.TestDto testdto = new Dto.TestDto();
+		Vo.TestVo testvo = new Vo.TestVo()
+
+	}
+
+}

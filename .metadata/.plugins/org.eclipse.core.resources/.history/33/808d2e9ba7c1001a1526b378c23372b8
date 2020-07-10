@@ -1,0 +1,35 @@
+package chapter04;
+
+import java.util.Scanner;
+
+public class Main02 {//
+	public static void main(String[] args) {
+		Memberlogin aaa = new Memberlogin();	
+		Member member = new Member(null, null, null, null);
+		boolean run = true;
+		Scanner scan = new Scanner(System.in);
+		int nember = Integer.parseInt(scan.nextLine());
+
+		while(run) {
+			System.out.print("1.로그인");
+			System.out.print("2.회원가입");
+			System.out.print("3.종료");
+		switch(nember) {
+		case 1 : System.out.print("로그인");	
+			Member.member = aaa.login1();
+			break;
+		case 2 : System.out.print("회원가입");
+			aaa.login2();
+			break;
+		case 3 : System.out.print("종료");
+		 	run = false;
+			break;
+		default : System.out.print("다시 입력하세요");
+		
+	}
+}
+}
+}
+
+
+

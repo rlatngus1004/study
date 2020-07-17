@@ -6,7 +6,7 @@ public class Main {
 	static Member m;//인스턴스 데이터 저장 공간
 	static Scanner scan = new Scanner(System.in);
 	static Member[] members = new Member[100];
-	static int flag = -1;
+	static int flag = -1; 
 
 	public static void main(String[] args) {
 		boolean run = true;

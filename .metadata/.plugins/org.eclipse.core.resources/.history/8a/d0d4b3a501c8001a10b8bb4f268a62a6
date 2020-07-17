@@ -1,0 +1,44 @@
+package chapter10;
+
+import java.util.Date;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//Value v1 = new Value (10);
+		//Value v2 = new Value (10);
+		//v1=v2;
+		
+		//if(v1.equals(v2)) {
+		//	System.out.println("v1 == v2");
+		//} else { 
+		//	System.out.println("v1 != v2");
+		//}
+		
+		Person p1 = new Person("김수현");
+		Person p2 = new Person("김수현");
+		
+		if(p1.equals(p2)) {
+			System.out.println("p1 == p2");
+		} else { 
+			System.out.println("p1 != p2");
+		}
+		if(p1==p2) {
+			System.out.println("p1 == p2");
+		} else { 
+			System.out.println("p1 != p2");
+		}
+		
+		Card card1 = new Card("spade",3);
+		Card card2 = new Card("spade",3);
+		
+		System.out.println(card1.toString());
+		System.out.println(card2.toString());
+		
+		Date now = new Date();
+		String strnow = now.toString();
+		System.out.println(strnow);
+
+	}
+
+}

@@ -1,0 +1,64 @@
+
+package chapter06;
+
+import java.util.Scanner;
+
+public class boardmain {
+
+	static Scanner Scan =  new Scanner (System.in);
+
+	static boolean run = true;
+
+	public static void main(String[] args) {
+
+		
+
+		while(run) {
+
+		System.out.println("게시글 보기");
+
+		System.out.println("글 작성");
+
+		System.out.println("글 삭제");
+
+		System.out.println("프로그램 종료");
+
+		int menu = Scan.nextInt();
+
+		switch(menu) {
+
+		case 1 :
+
+			
+
+			break;
+
+		case 2 :
+
+			break;
+
+		case 3 :
+
+			break;
+
+		case 4 :
+
+			run = false;
+
+			System.exit(0);
+
+			break;
+
+		default :
+
+			System.out.println("잘못 입력하셨습니다.");
+
+		}
+
+		}
+
+	}
+
+
+
+}

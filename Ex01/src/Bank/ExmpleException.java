@@ -1,0 +1,10 @@
+package Bank;
+
+public class ExmpleException extends Exception {
+	public ExmpleException () {}
+	public ExmpleException (String msg) {
+		super(msg);
+	}
+}
+	
+

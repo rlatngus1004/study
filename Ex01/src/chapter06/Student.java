@@ -1,0 +1,82 @@
+package chapter06;
+
+public class Student {
+	String name;
+	int[] scroes;
+	int sum;
+	double avg;
+	int ranking;
+	
+		Student(String name, int[] scroes) {
+		super();
+		this.name = name;
+		this.scroes = scroes;
+		this.sum = sum();
+		this.avg = avg();
+		this.ranking = 1;
+	}
+
+	public String getName() {
+			return name;
+		}
+
+		public void setName(String name) {
+			this.name = name;
+		}
+
+		public int getScores(int idx) {//인덱스 번호를 받아서
+			return scroes[idx]; // 인덱스에 해당하는 배열 내용을 반환
+		}//0은 국어, 1은 영어, 2는 수학
+
+		public void setScroes(int[] scroes) {
+			this.scroes = scroes;
+		}
+
+		public int getSum() {
+			return sum;
+		}
+
+		public void setSum(int sum) {
+			this.sum = sum;
+		}
+
+		public double getAvg() {
+			return avg;
+		}
+
+		public void setAvg(double avg) {
+			this.avg = avg;
+		}
+
+		public int getRanking() {
+			return ranking;
+		}
+
+		public void setRanking(int ranking) {
+			this.ranking = ranking;
+		}
+
+	private double avg() {
+			return sum/3;
+		}
+
+	private int sum() {
+		int sum = 0;
+		for(int score : scroes) {
+			sum += score;
+		}
+		return sum;
+	}
+	public void prt() {
+		System.out.println("학생 이름 :"+name);
+		System.out.println("국어 점수 :"+scroes[0]);
+		System.out.println("영어 점수 :"+scroes[1]);
+		System.out.println("수학 점수 :"+scroes[2]);
+		System.out.println("총      점 :"+sum);
+		System.out.println("평      균 :"+avg);
+	}
+
+
+            
+
+}

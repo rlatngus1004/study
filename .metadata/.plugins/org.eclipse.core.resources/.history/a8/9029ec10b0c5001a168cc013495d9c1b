@@ -1,0 +1,40 @@
+package chapter06;
+
+public class Student {
+	String name;
+	int[] scroes;
+	int sum;
+	double avg;
+	int ranking;
+	
+		Student(String name, int[] scroes) {
+		super();
+		this.name = name;
+		this.scroes = scroes;
+		this.sum = sum();
+		this.avg = avg();
+		this.ranking = 1;
+	}
+
+	private double avg() {
+			return sum/3;
+		}
+
+	private int sum() {
+		int sum = 0;
+		for(int score : scroes) {
+			sum += score;
+		}
+		return 0;
+	}
+	public void prt() {
+		System.out.println("학생 이름 :"+name);
+		System.out.println("국어 점수 :"+scroes[0]);
+		System.out.println("영어 점수 :"+scroes[1]);
+		System.out.println("수학 점수 :"+scroes[2]);
+		System.out.println("총      점 :"+sum);
+		System.out.println("평      균 :"+avg);
+	}
+            
+
+}

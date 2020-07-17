@@ -1,0 +1,20 @@
+package chapter09;
+
+public class Main3 {
+
+	public static void main(String[] args) {
+		int[] num = {1,2,3};
+		try {
+			System.out.println(num[5]/1);
+		}catch(ArrayIndexOutOfBoundsException err1) {
+			System.out.println("인덱스 범위를 벗어났습니다.");
+		}
+		catch(Exception err2) {
+			System.out.println("0으로 나눌 수 없습니다.");//혹은 두개 이상의 오류를 하나의 문장으로 묶을 수도 있음.
+		}finally {
+			System.out.println("예외가 있건 없건 작동되는 코드");
+		}
+		
+	}
+
+}

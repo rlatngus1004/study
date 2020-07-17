@@ -1,0 +1,24 @@
+package Bank;
+
+import chapter09.MyException;
+
+public class Exception extends Exception{
+	static Account acc = new Account();
+	public static void main(String[] args) {
+		Method();
+		try {
+			acc.withdraw(10000);
+		}catch() {
+			System.out.println("대출 범위에서 벗어났습니다.");
+		}
+	}
+
+	private static void Method() {
+		if (acc.getBalance() < 0) {
+			
+		}
+		
+		
+	}
+
+}

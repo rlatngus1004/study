@@ -1,9 +1,0 @@
-package chapter05;
-
-public class Main02 {
-	
-	String[] student = new String[] {"고","김","이","박","홍"}; 
-	
-	
-
-}

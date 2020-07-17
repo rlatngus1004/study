@@ -1,0 +1,18 @@
+package shapter06;
+
+public class MainCar {
+	public static void main(String[] args) {
+		Car myCar = new ConvertableCar();
+		myCar.forward(); 
+		myCar.backward();
+		ConvertableCar myCar1 = (ConvertableCar) myCar;
+		myCar1.open();
+		///////////////////////////////////////////
+		Car yourCar = new SUVCar();
+		yourCar.forward(); //SUV가 실행 
+		yourCar.backward();
+		SUVCar hisCar = (SUVCar) yourCar;
+		hisCar.backward();
+	}
+
+}

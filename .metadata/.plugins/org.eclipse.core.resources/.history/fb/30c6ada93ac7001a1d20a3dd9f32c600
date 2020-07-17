@@ -1,0 +1,15 @@
+package Bank;
+
+public class Exception {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Account acc = new Account();
+		try {
+			acc.withdraw(10000);
+		}catch(ArrayIndexOutOfBoundsException err1) {
+			System.out.println("대출 범위에서 벗어났습니다.");
+		}
+	}
+
+}

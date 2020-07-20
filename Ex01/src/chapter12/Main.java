@@ -1,0 +1,53 @@
+package chapter12;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String[] strs = new String[5];
+		//ArrayList<String> names = new ArrayList<>();
+		LinkedList<String> names = new LinkedList<>();
+		
+		strs[0] = "고";
+		strs[1] = "김";  
+		strs[2] = "박";
+		strs[3] = "홍";
+		strs[4] = "이";
+	
+		names.add("고");
+		names.add("김");
+		names.add("박");
+		names.add("홍");
+		names.add("이");
+		
+		String str = strs[3];
+		System.out.println(str);
+		String name1 = names.get(3);
+		System.out.println(name1);
+		System.out.println("-------------------------------");
+		System.out.println(strs.length);
+		System.out.println(names.size());
+		System.out.println("-------------------------------");
+		for(int i=0; i<strs.length; i++) {
+			System.out.println(strs[i]);
+		}
+		System.out.println("-------------------------------");
+		for(int i=0; i<names.size(); i++) {
+			System.out.println(names.get(i));
+		}
+		System.out.println("-------------------------------");
+		names.remove(1);
+		for(int i=0; i<names.size(); i++) {
+			System.out.println(names.get(i));
+		}
+		System.out.println("-------------------------------");
+		names.set(0, "뷁");
+		for(int i=0; i<names.size(); i++) {
+			System.out.println(names.get(i));
+		}
+		
+	}
+
+}

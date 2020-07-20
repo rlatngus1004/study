@@ -1,0 +1,25 @@
+package chapter12;
+
+import java.util.TreeSet;
+
+public class Main4 {
+
+	public static void main(String[] args) {
+		TreeSet<String> names = new TreeSet<>();
+		
+		names.add("고");
+		names.add("박");
+		names.add("김");
+		names.add("최");
+		names.add("이");
+		names.add("송");
+		
+		System.out.println(names.first());
+		System.out.println(names.last());
+		System.out.println(names.lower("이"));//미만
+		System.out.println(names.higher("이"));//초과
+		System.out.println(names.ceiling("송"));//같거나 바로 위
+		System.out.println(names.floor("김"));//같거나 바로 아래
+	}
+
+}

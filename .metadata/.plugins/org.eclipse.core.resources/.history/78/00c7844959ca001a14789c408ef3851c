@@ -1,0 +1,45 @@
+package chapter12;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String[] strs = new String[100];
+		ArrayList<String> names = new ArrayList<>();
+		
+		strs[0] = "고";
+		strs[1] = "김";
+		strs[2] = "박";
+		strs[3] = "홍";
+		strs[4] = "이";
+		
+		names.add("고");
+		names.add("김");
+		names.add("박");
+		names.add("홍");
+		names.add("이");
+		
+		String str = strs[3];
+		System.out.println(str);
+		String name1 = names.get(3);
+		System.out.println(name1);
+		
+		System.out.println(strs.length);
+		System.out.println(names.size());
+		
+		for(int i=0; i<strs.length; i++) {
+			System.out.println(strs[i]);
+		}
+		for(int i=0; i<names.size(); i++) {
+			System.out.println(names.get(i));
+		}
+		names.remove(1);
+		for(int i=0; i<names.size(); i++) {
+			System.out.println(names.get(i));
+		}
+				
+		
+	}
+
+}

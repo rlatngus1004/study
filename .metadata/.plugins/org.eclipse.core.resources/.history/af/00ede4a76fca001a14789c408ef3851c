@@ -1,0 +1,15 @@
+package chapter08;
+
+	public abstract class  Animal implements Sound,Breathe {// 인터페이스를 구현해봅시다.
+		protected String kind;
+		public void run() {
+			System.out.println("달린다.");
+		}
+		public abstract void sound();
+		public void breathe() {
+			System.out.println("숨쉬기");
+		}
+
+	}
+
+

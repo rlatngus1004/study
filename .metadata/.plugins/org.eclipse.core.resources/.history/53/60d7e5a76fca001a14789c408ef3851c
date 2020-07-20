@@ -1,0 +1,6 @@
+package chapter08;
+
+public interface Breathe {
+		int a = 10;
+		public void breathe();
+}

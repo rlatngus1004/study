@@ -1,7 +1,7 @@
 package quetion02;
+
 import java.util.Scanner;
 
-import quetion01.Account;
 public class Main {
 	private static Animal[] animal = new Animal[100];
 	private static Scanner scan = new Scanner(System.in);
@@ -13,9 +13,10 @@ public class Main {
 		System.out.println("3.동물 운동시키기");
 		System.out.println("4.동물 삭제");
 		System.out.println("5.프로그램 종료");
+		boolean run = true;
 		int menu = scan.nextInt();
 		scan.nextLine();
-		while(true) {
+		while(run) {
 			switch (menu) {
 			case 1 :
 				System.out.println("이름");
@@ -43,7 +44,7 @@ public class Main {
 				break;
 			case 2 :
 				for (int i=0; i<animal.length; i++) {
-					if (animal[i] == null) {
+					if (animal[i] != null) {
 						System.out.println(animal[i].getName());
 					}
 				}
@@ -57,18 +58,23 @@ public class Main {
 				break;
 			case 4 :
 				for (int i=0; i<animal.length; i++) {
-					if (animal[i] == null) {
+					if (animal[i] != null) {
 						System.out.println(animal[i].getName());
 					}
 				}
 				int number2 = scan.nextInt();
-				
-				
+				if (animal[number2] != null) {
+					animal[number2] = null;
+					System.out.println("삭제되었습니다.");
+				} else
+					System.out.println("번호를 잘못 입력하셨습니다.");
 				break;
 			case 5 :
-				
+				run = false;
+				System.exit(0);
 				break;
 			default :
+				System.out.println("잘못 입력했습니다.");
 			}
 		}
 	}

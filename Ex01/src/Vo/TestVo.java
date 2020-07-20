@@ -1,6 +1,0 @@
-package Vo;
-
-
-class TestVo {
-
-}

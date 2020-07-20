@@ -1,0 +1,19 @@
+package chapter11;
+
+public class Main {
+
+	public static void main(String[] args) {
+		AppleBox abox = new AppleBox();
+		OrangeBox obox = new OrangeBox();
+		
+		abox.set(new Apple());
+		obox.set(new Orange());
+		
+		Apple ap = abox.get();
+		Orange or = obox.get();
+		
+		System.out.println(ap.toString());
+		System.out.println(or.toString());
+	}
+
+}
